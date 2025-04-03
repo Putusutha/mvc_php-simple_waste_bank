@@ -1,0 +1,77 @@
+/* Color Variables */
+:root {
+    --primary-color: #123c4b;  /* Dark Blue */
+    --secondary-color: #28a745;  /* Green */
+    --text-color: #333333;  /* Dark Gray */
+    --background-color: #f5f5f5;  /* Light Gray */
+    --accent-color: #ffffff;  /* White */
+    --border-color: #d0d0d0;  /* Light Gray */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/*Main*/
+main{
+    margin-top: 100px;
+}
+
+/* Card Menu */
+.card-menu {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    margin: 20px;
+    padding: 20px;
+}
+
+.card-menu h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+}
+
+.card-menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.card-menu th, .card-menu td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.card-menu th {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.card-menu td {
+    background-color: var(--accent-color);
+}
+
+.card-menu ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.card-menu ol li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.2em;
+    }
+}

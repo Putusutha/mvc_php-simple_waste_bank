@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+    --primary-color: #123C4B;
+    --secondary-color: #A6CA3C;
+    --error-color: #cc3939;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.authform {
+    width: 100%;
+    max-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    margin: auto;
+}
+
+.brand {
+    margin-bottom: 20px;
+}
+
+.brand-logo {
+    width: 80%;
+}
+
+.title-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-label {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    background-color: #fff;
+    padding: 0 5px;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1.5px solid var(--primary-color);
+}
+
+.form-button {
+    display: flex;
+    gap: 3%;
+    margin-top: 10px;
+}
+
+.btn-submit, .btn-back a {
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    border: none;
+    margin-left: 5%;
+}  
+
+.btn-submit {
+    background-color: var(--secondary-color);
+    padding: 12px 48px;
+}
+
+.btn-back{
+  margin-top: 3%;;
+}
+
+.btn-back a {
+    background-color: var(--error-color);
+    padding: 8px 38px;
+}
+
+.btn-submit:hover {
+    background-color: #8ebf2b;
+    box-shadow: rgba(166, 202, 60, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-back a:hover {
+    background-color: #b02a2a;
+    box-shadow: rgba(204, 43, 31, 0.425) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.footer-form {
+    margin-top: 15px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 575px) {
+    .authform {
+        padding: 20px;
+    }
+
+    .form-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .authform {
+        padding: 25px;
+    }
+
+    .form-input {
+        padding: 11px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .authform {
+        padding: 30px;
+    }
+
+    .form-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .authform {
+        padding: 35px;
+    }
+
+    .form-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,227 @@
+/* Color variables for easy theming */
+:root {
+    --primary-color: #123c4b; /* Warna utama */
+    --secondary-color: #ffffff; /* Warna sekunder */
+    --accent-color: #ff9800; /* Warna aksen */
+    --text-color: #333333; /* Warna teks */
+    --background-color: #f0f0f0; /* Warna latar belakang */
+  
+    /* Warna-warna tambahan untuk navigasi */
+    --nav-color-1: rgb(40, 106, 206); 
+    --nav-color-2: #4caf50; 
+    --nav-color-3: rgb(207, 45, 45); 
+    --nav-color-4: #ff5722; 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* CSS Untuk Header */
+  .header-officer {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    height: auto;
+    display: block;
+    margin-left: 70%;
+  }
+  
+  .greeting-header h1,
+  .greeting-header p {
+    margin: 0;
+  }
+  
+  .greeting-header p {
+    margin-top: 5px;
+  }
+  
+  .logout {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: #f57c00; /* Warna yang lebih gelap untuk efek hover */
+  }
+  
+  .menu-nav {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Different background colors for navigation boxes */
+  .card-menu:nth-child(1) {
+    background-color: var(--nav-color-1); /* Hijau */
+  }
+  
+  .card-menu:nth-child(2) {
+    background-color: var(--nav-color-2); /* Biru */
+  }
+  
+  .card-menu:nth-child(3) {
+    background-color: var(--nav-color-3); /* Ungu */
+  }
+  
+  .card-menu:nth-child(4) {
+    background-color: var(--nav-color-4); /* Oranye */
+  }
+  
+  .card-menu {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    flex: 1 1 200px;
+    max-width: 200px; /* Ensure max-width for each card */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-menu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon-card-img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .teks {
+    color: var(--secondary-color);
+    margin: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .text-content {
+    margin-bottom: 20px;
+  }
+  
+  .text-content h1,
+  .text-content p {
+    margin: 0;
+  }
+  
+  .text-content p {
+    margin-top: 10px;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 769px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .content {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .text-content {
+      flex: 1;
+      margin-right: 20px;
+    }
+  
+    .image-content {
+      flex: 1;
+      text-align: right;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo{
+      display: none;
+    }
+  
+    .illustration {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .menu-nav .card-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .card-menu {
+      width: calc(50% - 20px); /* Two cards per row with gap */
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .text-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .image-content {
+      text-align: center;
+    }
+  }
+  

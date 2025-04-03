@@ -1,0 +1,233 @@
+/* Color Variables */
+:root {
+  --primary-color: #123C4B;
+  --secondary-color: #A6CA3C;
+  --light-gray: #f5f5f5;
+  --dark-gray: #333333;
+  --white: #ffffff;
+  --success-color: #28a745;
+  --hover-dark-blue: #0b2a33;
+}
+
+
+/* Button Group */
+.button-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn-select {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.btn-select:hover {
+  background-color: #8dc63f; /* Slightly darker green for hover effect */
+}
+
+/* Main Container */
+.container {
+  max-width: 960px;
+  margin: 100px auto 0px auto;
+  padding: 20px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card History */
+.card-history {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 16px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.history-header > div {
+  flex: 1;
+}
+
+.history-id {
+  font-weight: bold;  /* Text Bold */
+}
+
+.history-date {
+  text-align: right;  /* Align Right */
+  font-weight: bold;  /* Text Bold */
+}
+
+.history-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.history-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.history-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.price-label {
+  flex: 1;
+}
+
+.price-value {
+  margin-left: 10px;
+}
+
+.total .price-value {
+  font-weight: bold;  /* Text Bold */
+}
+
+.history-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-description {
+  flex: 1;
+}
+
+.status-transaction {
+  font-style: italic;
+  color: var(--success-color);
+}
+
+.btn-print {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-print:hover {
+  background-color: var(--hover-dark-blue);
+}
+
+/* Card Pickup */
+.card-pickup {
+  display: flex;
+  flex-direction: column;
+}
+
+.pickup-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 16px;
+}
+
+.pickup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pickup-id {
+  font-weight: bold;  /* Text Bold */
+}
+
+.pickup-date {
+  text-align: right;  /* Align Right */
+  font-weight: bold;  /* Text Bold */
+}
+
+.pickup-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pickup-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.pickup-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.price-label {
+  flex: 1;
+}
+
+.price-value {
+  margin-left: 10px;
+}
+
+.total .price-value {
+  font-weight: bold;  /* Text Bold */
+}
+
+.pickup-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pickup-description {
+  flex: 1;
+}
+
+.empty-data{
+  margin-top: 10%;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .header h1 {
+      font-size: 25px;
+  }
+}

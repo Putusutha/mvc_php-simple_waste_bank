@@ -1,0 +1,104 @@
+/* Custom Properties (CSS Variables) */
+:root {
+    --primary-color: #123C4B; /* Warna primer */
+    --secondary-color: #dc3545; /* Warna sekunder */
+    --success-color: #28a745; /* Warna sukses */
+}
+
+/* Global styles */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* Maksimum lebar konten */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form styles */
+.main-form {
+    background-color: #ffffff; /* Warna latar belakang form */
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--primary-color);
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus kolom-kolom */
+    gap: 20px; /* Jarak antar elemen */
+}
+
+.left-column,
+.right-column {
+    flex-basis: 100%; /* Lebar kolom pada layar kecil */
+}
+
+.caption-input {
+    font-weight: bold;
+    margin-block: 15px;
+    display: block;
+}
+
+.input-option,
+.input-datetime,
+.input-note {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd; /* Garis tepi input */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.input-option {
+    width: calc(100% - 2px); /* Penyesuaian lebar untuk dropdown */
+}
+
+.input-datetime {
+    width: calc(100% - 2px); /* Penyesuaian lebar untuk input datetime */
+}
+
+.input-note {
+    resize: none;
+}
+
+.btn-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.btn-submit{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity   0.3s ease;
+}
+
+.btn-submit {
+    background-color: var(--success-color); /* Menggunakan variabel untuk warna tombol Kirim */
+    color: #ffffff; /* Warna teks putih */
+    height: 40px;
+    font-size: 15px;
+}
+
+.btn-submit:hover{
+    opacity: 0.8; /* Efek transparansi saat dihover */
+}
+
+
+@media (min-width: 768px) {
+    .left-column,
+    .right-column {
+        flex-basis: 48%; /* Lebar kolom pada layar yang lebih besar */
+    }
+}
+
